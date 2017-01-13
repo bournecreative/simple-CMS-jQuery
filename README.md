@@ -9,9 +9,9 @@ This web application makes use of AJAX to update front end with database changes
 - Manage user expectations with visual cues such as preloaders during AJAX execution and messaging based on request outcomes
 - Use Bootstrap framework to style and develop UI capable of intuitive read, create, and delete functionality
 
-####Screen capture of desktop
+####Screen capture of desktop view
 <img src="../README_assets/AJAX-CMS-desktop.jpg"/>
 
-####Screen capture of mobile
-<img src="../README_assets/angular-CMS-mobile.jpg" width="300px"/>
+####Screen capture of mobile view
+<img src="../README_assets/AJAX-CMS-mobile.jpg" width="300px"/>
 
