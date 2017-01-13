@@ -1,0 +1,72 @@
+<!doctype html>
+<html>
+<head>
+<title>Student Grade Table</title>
+  <meta name="viewport" content="initial-scale=1, user-scalable=no">
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="css/css_overrides.css">
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+  <script src="js/script.js"></script>
+</head>
+<body>
+<div class="container">
+  <div class="loading" id="loader-1"></div>
+  <div class="col-md-12">
+    <h1 class="hidden-xs"><strong>Student Grade Table</strong>
+      <small class="pull-right"><strong>Grade Average : </strong><span class="avgGrade badge"></span></small>
+    </h1>
+    <hr class="hidden-xs">
+    <!-- only show this element for Mobile -->
+    <h3 class="visible-xs exSpace"><strong>Student Grade Table</strong>
+      <small class="pull-right"><strong>Grade Average : </strong><span class="avgGrade badge"></span></small>
+    </h3>
+    <hr class="visible-xs">
+  </div>
+  <div class="col-md-3 pull-right">
+      <h4><strong>Add Student</strong></h4>
+      <div class=" form-group input-group">
+        <span class="input-group-addon">
+          <span class="glyphicon glyphicon-user"></span>
+        </span>
+          <input type="text" class="form-control" name="studentName" id="studentName" placeholder="Student Name">
+      </div>
+      <div class="form-group input-group">
+        <span class="input-group-addon">
+          <span class="glyphicon glyphicon-list-alt"></span>
+        </span>
+        <input type="text" class="form-control" name="course" id="course" placeholder="Student Course">
+      </div>
+      <div class="form-group input-group">
+        <span class="input-group-addon">
+          <span class="glyphicon glyphicon-education"></span>
+        </span>
+        <input type="text" class="form-control" name="studentGrade" id="studentGrade" placeholder="Student Grade">
+      </div>
+      <div class="alert hidden" role="alert"></div>
+      <div class="form-group text-center">
+        <button type="button" class="btn btn-success"><strong>Add</strong></button>
+        <button type="button" class="btn btn-default"><strong>Cancel</strong></button>
+      </div>
+        <div class="form-group">
+        <button type="button" class="btn btn-info btn-block"><strong>Get Data</strong></button>
+        </div>
+    </div> <!-- end of column -->
+  <div class="student-list-container col-md-9 pull-left">
+    <table class=" table student-list">
+      <thead>
+        <tr>
+          <th><strong>Student Name</strong></th>
+          <th><strong>Student Course</strong></th>
+          <th><strong>Student Grade</strong></th>
+          <th><strong>Operations</strong></th>
+        </tr>
+      </thead>
+      <tbody>
+      </tbody>
+    </table>
+  </div>
+</div>
+</body>
+</html>
+
